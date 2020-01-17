@@ -1,0 +1,14 @@
+{
+  "autoload": {
+    "psr-4": {
+      "TrendingRepos\\": "src/",
+      "Tests\\": "tests"
+    }
+  },
+  "require": {
+    "symfony/console": "^4.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8"
+  }
+}
