@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">-->
     <link rel="stylesheet" href="css/output.css">
-    <title>Trending Repositories</title>
+    <title>MVC Framework</title>
 </head>
 <body class="flex items-center justify-center tracking-wider leading-normal" style="background: #edf2f7;">
 <div class="font-sans bg-grey-lighter flex flex-col min-h-screen w-full">
   <div>
     <nav class="flex items-center justify-between flex-wrap bg-blue-600 p-6">
       <div class="flex items-center flex-shrink-0 text-white mr-6">
-        <span class="font-semibold text-xl tracking-tight">Trending Repositories</span>
+        <span class="font-semibold text-xl tracking-tight">MVC Framework</span>
       </div>
       <div class="block lg:hidden">
         <button  onclick="toggle()" class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
@@ -25,7 +25,7 @@
           <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
             Docs
           </a>
-          <a href="https://github.com/MagedAhmad/PHP-microframework" target="_blank" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+          <a href="https://github.com/MagedAhmad/micro-mvc-framework" target="_blank" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
             Project on Github
           </a>
         </div>

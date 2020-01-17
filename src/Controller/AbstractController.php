@@ -3,6 +3,7 @@
 namespace TrendingRepos\Controller;
 
 use TrendingRepos\App;
+use TrendingRepos\Core\Page;
 
 abstract class AbstractController
 {

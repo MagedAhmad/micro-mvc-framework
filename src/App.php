@@ -5,9 +5,11 @@ namespace TrendingRepos;
 use TrendingRepos\Exception\RouterException;
 use TrendingRepos\Core\Request;
 use TrendingRepos\Core\Router;
+use TrendingRepos\Core\Page;
 
 class App 
 {
+    protected $environment = 'development';
     private $registry = [];
     /** @var Router Object */
     private $router;
@@ -29,11 +31,15 @@ class App
         try {
             $this->router->get();
         }catch(RouterException $e) {
-            view('404', [
+            echo (new Page)->view('404', [
+                'error' => $e->getMessage()
+            ]);
+        }catch(\Exception $e) {
+            echo (new Page)->view('404', [
                 'error' => $e->getMessage()
             ]);
         }
-    } 
+    }
     
     private function loadConfigFile()
     {
@@ -44,7 +50,7 @@ class App
     {
         ini_set('error_reporting', E_ALL);
 
-        ini_set('display_errors', $this->registry['config']['env'] == 'development' ? 'On' : 'Off');
+        ini_set('display_errors', $this->environment == 'development' ? 'On' : 'Off');
     }
 
     private function loadRouter()
